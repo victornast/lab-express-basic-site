@@ -1,3 +1,54 @@
 body {
-  color: rebeccapurple;
+  color: #eee;
+  background-color: #021859;
+  font-family: 'Ubuntu', sans-serif;
+  max-width: 960px;
+  padding: 0 124px;
+  margin: 0 auto;
+}
+
+a {
+  color: #eee;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.nav-bar {
+  background-color: #010b40;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+}
+
+.navigation li {
+  padding-right: 1em;
+}
+
+.current {
+  font-weight: 700;
+}
+
+.content {
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+}
+
+.gallery {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 2.5em;
+}
+
+.gallery li:last-child {
+  grid-column: 1 / -1;
 }
